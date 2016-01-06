@@ -1,6 +1,7 @@
 puts "hi"
 require 'active_record'
 require 'sqlite3'
+require 'mysql2'
 require 'logger'
 
 ActiveRecord::Base.logger = Logger.new('debug.log')
@@ -10,4 +11,4 @@ ActiveRecord::Base.establish_connection(configuration['development'])
 class User < ActiveRecord::Base
 end
 
-p User.all
+#p User.all
