@@ -1,0 +1,23 @@
+development:
+  adapter: mysql2
+  database: development_pims
+  username: root
+  password: test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  database: pims
+  username: root
+  password: test
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: mysql2
+  database: test_pims
+  username: root
+  password: test
+  pool: 5
+  timeout: 5000

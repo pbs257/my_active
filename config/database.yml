@@ -1,7 +1,0 @@
-development:
-  adapter: mysql2
-  database: pims
-  username: root
-  password: servantes
-  pool: 5
-  timeout: 5000
