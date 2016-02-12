@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 3) do
+ActiveRecord::Schema.define(version: 20160201130426) do
 
   create_table "customers", force: :cascade do |t|
     t.string   "name",       limit: 255
@@ -29,7 +29,8 @@ ActiveRecord::Schema.define(version: 3) do
   add_index "orders", ["customer_id"], name: "index_orders_on_customer_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string "name", limit: 255
+    t.string "firstname", limit: 255
+    t.string "lastname",  limit: 255
   end
 
 end

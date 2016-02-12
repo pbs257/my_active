@@ -5,4 +5,4 @@ require 'active_record_migrations'
 
 ActiveRecord::Base.logger = Logger.new('debug.log')
 configuration = YAML::load(IO.read('db/config.yml'))
-ActiveRecord::Base.establish_connection(configuration['development'])
+ActiveRecord::Base.establish_connection(configuration[ENV['RAILS_ENV']])
