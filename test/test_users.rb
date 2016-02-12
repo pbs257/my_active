@@ -1,6 +1,4 @@
-require 'minitest/autorun'
 require_relative "test_helper"
-require_relative "../app_lib"
 
 class TestUsers < MiniTest::Unit::TestCase
   def test_main

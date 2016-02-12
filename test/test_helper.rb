@@ -1,7 +1,3 @@
-require 'active_record'
-require 'mysql2'
-require 'logger'
-require 'yaml'
-
-configuration = YAML::load(IO.read('../db/config.yml'))
-ActiveRecord::Base.establish_connection(configuration[ENV['RAILS_ENV']])
+require_relative "../lib/app_helper"
+require 'minitest/autorun'
+require_relative "../lib/app_lib"
