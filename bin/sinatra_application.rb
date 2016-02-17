@@ -14,6 +14,11 @@ get '/shop/test2' do
 end
 
 get '/shop/customers' do
-  "#{Customer.name}"
+  output = "";
+  output += "<table>"
+  Customer.all.each do |c|
+    output += "<tr><td>#{c.name}</td><td> #{c.id}</td></tr>"
+  end
+  output += "</table>"
 end
 
