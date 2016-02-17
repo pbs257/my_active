@@ -1,0 +1,22 @@
+when you need to update project dependencies you should
+
+bundle install
+
+to run sinatra
+- ruby bin/sinatra_application.rb
+
+before run any application in the project you should set env variable
+
+- export RAILS_ENV=test
+
+
+
+
+entities
+Products
+    attributes
+    attribute sets
+Customers
+    attributes
+Users(admin and other users)
+Orders

@@ -1,4 +1,4 @@
-require './app_helper.rb'
+require './lib/app_helper.rb'
 ActiveRecordMigrations.load_tasks
 
 task :default => :migrate
