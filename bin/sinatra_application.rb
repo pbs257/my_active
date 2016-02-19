@@ -17,8 +17,27 @@ get '/shop/customers' do
   output = "";
   output += "<table>"
   Customer.all.each do |c|
-    output += "<tr><td>#{c.name}</td><td> #{c.id}</td></tr>"
+    output += "<tr><td>#{c.id}</td><td> #{c.name}</td></tr>"
   end
   output += "</table>"
 end
+
+get '/shop/products' do
+  output = "";
+  output += "<table>"
+  Product.all.each do |c|
+    output += "<tr><td>#{c.id}</td><td> #{c.name}</td><td> #{c.price}</td><td> #{c.description}</td></tr>"
+  end
+  output += "</table>"
+end
+
+get '/shop/orders' do
+  output = "";
+  output += "<table>"
+  Order.all.each do |c|
+    output += "<tr><td>#{c.id}</td><td> #{c.customer_id}</td><td>#{c.product_id}</td></tr>"
+  end
+  output += "</table>"
+end
+
 
