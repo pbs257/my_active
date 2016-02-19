@@ -1,0 +1,22 @@
+# Logfile created on 2016-02-12 12:15:24 +0000 by logger.rb/47272
+D, [2016-02-12T12:25:44.828516 #8915] DEBUG -- :   [1m[36mUser Load (2.1ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-15T16:06:56.588496 #3204] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-16T03:29:12.851335 #5008] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-17T03:22:42.527318 #5749] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-02-17T03:22:42.532667 #5749]  INFO -- : Migrating to CreateProduct (20160215163720)
+D, [2016-02-17T03:22:42.538058 #5749] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `sku` varchar(255), `price` float) ENGINE=InnoDB
+D, [2016-02-17T03:58:07.046482 #5757] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T03:58:25.000204 #5757] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+D, [2016-02-17T12:03:52.042210 #6024] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:07:07.013009 #6048] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:15:24.409514 #6051] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:16:24.907437 #6055] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:16:58.451412 #6058] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:19:47.630807 #6066] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:27:37.465907 #6069] DEBUG -- :   [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:30:07.987415 #6073] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:35:22.233039 #6076] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:35:48.632279 #6079] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:35:55.355951 #6079] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-17T12:37:18.600347 #6079] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-17T12:39:57.572382 #6092] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
