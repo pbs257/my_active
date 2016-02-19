@@ -2,10 +2,12 @@ require_relative "test_helper"
 
 class TestUsers < MiniTest::Unit::TestCase
   include WithRollback
+  include Zoral
 
   def test_main
     puts 'p'
     p User.all
+    refute_nil User.all
 
   end
 

@@ -31,3 +31,33 @@ D, [2016-02-19T03:47:59.439434 #4643] DEBUG -- :   [1m[35mCustomer Load (0.2ms
 D, [2016-02-19T03:48:23.703500 #4643] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
 D, [2016-02-19T03:51:23.571275 #4652] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
 D, [2016-02-19T03:51:27.103952 #4652] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-19T03:59:23.758267 #4669] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-19T04:00:03.557169 #4669] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders`
+D, [2016-02-19T12:01:55.596681 #4880] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2016-02-19T12:01:55.599615 #4880] DEBUG -- :   [1m[35m (0.2ms)[0m  BEGIN
+D, [2016-02-19T12:01:55.605657 #4880] DEBUG -- :   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`firstname`, `lastname`) VALUES ('Joe', 'Walker')[0m
+D, [2016-02-19T12:01:55.606654 #4880] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:01:55.622613 #4880] DEBUG -- :   [1m[36m (15.6ms)[0m  [1mROLLBACK[0m
+D, [2016-02-19T12:01:55.623643 #4880] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:01:55.625742 #4880] DEBUG -- :   [1m[36mZoral::User Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-19T12:02:43.578765 #4886] DEBUG -- :   [1m[36mZoral::User Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-19T12:02:43.583168 #4886] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:02:43.583623 #4886] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2016-02-19T12:02:43.588623 #4886] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`firstname`, `lastname`) VALUES ('Joe', 'Walker')
+D, [2016-02-19T12:02:43.589588 #4886] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2016-02-19T12:02:43.592049 #4886] DEBUG -- :   [1m[35m (2.2ms)[0m  ROLLBACK
+D, [2016-02-19T12:02:43.592748 #4886] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2016-02-19T12:03:56.694431 #4891] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2016-02-19T12:03:56.695489 #4891] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2016-02-19T12:03:56.700885 #4891] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`firstname`, `lastname`) VALUES ('Joe', 'Walker')[0m
+D, [2016-02-19T12:03:56.701869 #4891] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:03:56.705565 #4891] DEBUG -- :   [1m[36m (3.3ms)[0m  [1mROLLBACK[0m
+D, [2016-02-19T12:03:56.706394 #4891] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:03:56.707933 #4891] DEBUG -- :   [1m[36mZoral::User Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-19T12:04:44.977673 #4896] DEBUG -- :   [1m[36mZoral::User Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-19T12:04:44.981720 #4896] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users`
+D, [2016-02-19T12:04:44.982329 #4896] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+D, [2016-02-19T12:04:44.987665 #4896] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`firstname`, `lastname`) VALUES ('Joe', 'Walker')
+D, [2016-02-19T12:04:44.988622 #4896] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+D, [2016-02-19T12:04:44.992170 #4896] DEBUG -- :   [1m[35m (3.1ms)[0m  ROLLBACK
+D, [2016-02-19T12:04:44.992930 #4896] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
