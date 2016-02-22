@@ -35,7 +35,10 @@ get '/shop/orders' do
   output = "";
   output += "<table>"
   Order.all.each do |c|
-    output += "<tr><td>#{c.id}</td><td> #{c.customer_id}</td><td>#{c.product_id}</td></tr>"
+
+    c_name = Customer.find c.customer_id.to_s
+    c_name = c.customer.name
+    output += "<tr><td>#{c.id}</td><td> #{c.customer_id}</td><td>#{c_name}</td></tr>"
   end
   output += "</table>"
 end
