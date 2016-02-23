@@ -1,0 +1,8 @@
+<h1>Customers</h1>
+
+<%output = "";%>
+<%output += "<table>"%>
+  <%Customer.all.each do |c|%>
+  <%output += "<tr><td>#{c.id}</td><td> #{c.name}</td></tr>"%>
+  <%end%>
+  <%=output += "</table>"%>

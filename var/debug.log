@@ -31,3 +31,133 @@ D, [2016-02-19T03:47:59.439434 #4643] DEBUG -- :   [1m[35mCustomer Load (0.2ms
 D, [2016-02-19T03:48:23.703500 #4643] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
 D, [2016-02-19T03:51:23.571275 #4652] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
 D, [2016-02-19T03:51:27.103952 #4652] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-19T12:56:32.668674 #5232] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-02-19T12:56:32.675700 #5232]  INFO -- : Migrating to CreateProduct (20160215163720)
+D, [2016-02-19T12:56:32.681813 #5232] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE `products` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `sku` varchar(255), `price` float) ENGINE=InnoDB
+D, [2016-02-22T01:38:36.734936 #6735] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-22T04:16:15.942271 #7084] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+D, [2016-02-22T04:16:20.519734 #7084] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-22T04:16:25.769646 #7084] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:19:37.007639 #7741] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-22T12:19:56.244040 #7741] DEBUG -- :   [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+D, [2016-02-22T12:20:18.569407 #7741] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:35:47.348075 #7754] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:36:23.785072 #7761] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:36:23.811322 #7761] DEBUG -- :   [1m[35mCustomer Load (0.4ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:40:13.402597 #7761] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:40:13.404004 #7761] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:40:13.407412 #7761] DEBUG -- :   [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+D, [2016-02-22T12:40:26.711276 #7771] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:40:26.731995 #7771] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:40:26.738023 #7771] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+D, [2016-02-22T12:42:08.399323 #7776] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:42:08.420443 #7776] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:42:08.423711 #7776] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:42:08.424364 #7776] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:42:08.424883 #7776] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:45:16.530866 #7781] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:45:16.550487 #7781] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:45:16.553883 #7781] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:45:16.554517 #7781] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:45:16.555018 #7781] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:49:07.332350 #7786] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:49:07.354489 #7786] DEBUG -- :   [1m[35mCustomer Load (0.4ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:49:07.368030 #7786] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:49:58.721792 #7791] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-22T12:49:58.746821 #7791] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:49:58.757844 #7791] DEBUG -- :   [1m[36mCustomer Load (0.5ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:49:58.758913 #7791] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:49:58.759989 #7791] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:49:58.760622 #7791] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:49:58.761358 #7791] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:49:58.761937 #7791] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-22T12:49:58.762769 #7791] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-22T12:58:47.029526 #8180] DEBUG -- :   [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-22T13:01:57.139496 #8185] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-22T13:02:25.247377 #8190] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T03:39:05.581451 #8207] DEBUG -- :   [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T03:39:13.902696 #8207] DEBUG -- :   [1m[35mCustomer Load (0.6ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T03:39:21.021308 #8207] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-23T03:39:21.029421 #8207] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:21.035393 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:21.036237 #8207] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:21.037054 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:21.037681 #8207] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:21.038410 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:21.039007 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:21.039714 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:34.481890 #8207] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders`
+D, [2016-02-23T03:39:34.482817 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:34.483758 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:34.484303 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:34.484935 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:34.485504 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:34.486078 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:39:34.486557 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:39:34.487111 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:41:57.069951 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-23T03:41:57.073633 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T03:43:36.890246 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-23T03:43:36.893530 #8207] DEBUG -- :   [1m[35mCustomer Load (0.5ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T03:43:57.740145 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-23T03:43:57.743613 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T03:46:26.383493 #8207] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T03:47:51.177908 #8207] DEBUG -- :   [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+D, [2016-02-23T03:49:17.413183 #8207] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-23T03:49:17.414045 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.414899 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.415480 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.416101 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.416703 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.417403 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.417858 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.418526 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.424062 #8207] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders`
+D, [2016-02-23T03:49:17.424864 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.425824 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.426385 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.427110 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.427622 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.428258 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:49:17.428779 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:49:17.429598 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:50:31.025283 #8207] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T03:50:41.246578 #8207] DEBUG -- :   [1m[35mProduct Load (0.2ms)[0m  SELECT `products`.* FROM `products`
+D, [2016-02-23T03:51:01.421244 #8207] DEBUG -- :   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T03:51:01.424272 #8207] DEBUG -- :   [1m[35mProduct Load (0.1ms)[0m  SELECT `products`.* FROM `products`
+D, [2016-02-23T03:53:32.390175 #8207] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-23T03:53:32.393518 #8207] DEBUG -- :   [1m[35mCustomer Load (0.3ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.395985 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.396673 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.397503 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.398103 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.398783 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.399328 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.399998 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.403440 #8207] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT `orders`.* FROM `orders`
+D, [2016-02-23T03:53:32.404346 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.405214 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.405772 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.406354 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.406916 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.407499 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T03:53:32.408032 #8207] DEBUG -- :   [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T03:53:32.408605 #8207] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T04:03:18.754569 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-23T04:03:18.759266 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T04:12:50.797791 #8207] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT `orders`.* FROM `orders`[0m
+D, [2016-02-23T04:12:50.798992 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T04:12:50.801532 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T04:12:50.802194 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T04:12:50.802954 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T04:12:50.803532 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T04:12:50.804240 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T04:12:50.804777 #8207] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+D, [2016-02-23T04:12:50.805492 #8207] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+D, [2016-02-23T04:12:50.808851 #8207] DEBUG -- :   [1m[35mOrder Load (0.5ms)[0m  SELECT `orders`.* FROM `orders`
+D, [2016-02-23T04:12:55.140826 #8207] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-02-23T04:12:55.145908 #8207] DEBUG -- :   [1m[35mCustomer Load (0.5ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-02-23T04:12:59.442746 #8207] DEBUG -- :   [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T04:12:59.447786 #8207] DEBUG -- :   [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
+D, [2016-02-23T04:13:03.006929 #8207] DEBUG -- :   [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products`[0m
+D, [2016-02-23T04:13:03.011158 #8207] DEBUG -- :   [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products`
