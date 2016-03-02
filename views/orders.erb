@@ -1,11 +1,39 @@
 <h1>Orders</h1>
 
-<%output = "";
-output += "<table>"
-  Order.all.each do |c|
-  output += "<tr><td>#{c.id}</td><td><p><a href="'/shop/customers'">#{c.customer_id}</a></p></td><td><p><a href="'/shop/products'">#{c.product_id}</a></p></td></tr>"
-  end%>
- <%=output += "</table>"%>
 
+
+<table>
+  <tr>
+    <td>
+      <b>
+        Order ID
+      </b>
+    </td>
+    <td>
+      <b>
+        Customer ID
+      </b>
+    </td>
+    <td>
+      <b>
+        Customer Name
+      </b>
+    </td>
+  </tr>
+  <% Order.all.each do |o| %>
+      <tr>
+        <td>
+          <%= o.id %>
+        </td>
+        <td>
+          <%= o.customer_id %>
+        </td>
+        <td>
+          <%= o.customer.name%>
+        </td>
+
+      </tr>
+  <% end %>
+</table>
 
 
