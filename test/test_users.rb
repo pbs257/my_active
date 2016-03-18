@@ -3,11 +3,7 @@ require_relative "test_helper"
 class TestUsers < MiniTest::Unit::TestCase
   include WithRollback
 
-  def test_main
-    puts 'p'
-    p User.all
 
-  end
 
   def test_write
     assert_equal 0, User.count

@@ -436,3 +436,56 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'users'
 
 D, [2016-03-02T12:03:53.415481 #11546] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+D, [2016-03-11T04:31:42.401768 #3280] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2016-03-11T04:31:49.607609 #3283] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2016-03-11T04:31:49.619592 #3283] DEBUG -- :   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+D, [2016-03-11T04:31:49.626524 #3283] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'test_pims'
+  AND fk.table_name = 'customers'
+[0m
+D, [2016-03-11T04:31:49.626917 #3283] DEBUG -- :   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `customers`
+D, [2016-03-11T04:31:49.627468 #3283] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'test_pims'
+  AND fk.table_name = 'orders'
+[0m
+D, [2016-03-11T04:31:49.627965 #3283] DEBUG -- :   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `orders`
+D, [2016-03-11T04:31:49.628692 #3283] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'test_pims'
+  AND fk.table_name = 'products'
+[0m
+D, [2016-03-11T04:31:49.629013 #3283] DEBUG -- :   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `products`
+D, [2016-03-11T04:31:49.629585 #3283] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'test_pims'
+  AND fk.table_name = 'products_orders'
+[0m
+D, [2016-03-11T04:31:49.629897 #3283] DEBUG -- :   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `products_orders`
+D, [2016-03-11T04:31:49.630405 #3283] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'test_pims'
+  AND fk.table_name = 'users'
+[0m
+D, [2016-03-11T04:31:49.630718 #3283] DEBUG -- :   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
