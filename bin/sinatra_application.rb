@@ -21,11 +21,30 @@ get '/shop/customers' do
 end
 
 get '/shop/products' do
-      erb :products
+  erb :home, :layout => false do
+    erb :products
+  end
 end
 
 get '/shop/orders' do
   erb :orders
 end
 
+get '/shop/product' do
+  erb :home, :layout => false do
+    erb :products
+  end
+end
 
+get '/shop/product/:id' do
+  @id = params[:id]
+  erb :product
+end
+
+get '/shop/product/1' do
+  erb :product
+end
+
+get '/shop/bootstrap_tester' do
+  erb :bootstrap_tester
+end
