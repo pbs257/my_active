@@ -38,7 +38,9 @@ end
 
 get '/shop/product/:id' do
   @id = params[:id]
-  erb :product
+  erb :home, :layout => false do
+    erb :product
+    end
 end
 
 get '/shop/product/1' do
