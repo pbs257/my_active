@@ -891,3 +891,14 @@ D, [2016-03-31T01:31:28.941635 #4930] DEBUG -- :   [1m[35mOrder Load (0.8ms)[
 D, [2016-03-31T01:31:28.942614 #4930] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
 D, [2016-03-31T01:31:28.943591 #4930] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
 D, [2016-03-31T01:31:28.944560 #4930] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:32:13.741314 #5013] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:32:13.759035 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:32:13.766153 #5013] DEBUG -- :   [1m[36mOrder Load (1.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:32:13.767109 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:32:13.768093 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:32:13.768915 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:32:13.769733 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:32:13.770564 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:32:13.771429 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:32:13.772260 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:32:13.773209 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m

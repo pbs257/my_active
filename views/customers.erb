@@ -1,7 +1,36 @@
-<h1>Customers</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"> <!--Tells browser to use latest rendering engine -->
+  <title></title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1 "> <!--Set page width to size of device and set zoom level 1-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<div class="container"> <!--Puts padding around everything within div-->
+  <div class="page-header">
+    <h1>Customers</h1>
+  </div>
+</div>
 
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+      <td colspan="4">ID</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    </table>
 
-<table>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>
+
+<!--
+  <table>
   <tr>
     <td>
       <b>
@@ -19,17 +48,18 @@
       </b>
     </td>
   </tr>
-  <% Customer.all.each do |c| %>
+  <% #Customer.all.each do |c|  %>
       <tr>
         <td>
-          <%= c.id %>
+          <%= #c.id  %>
         </td>
         <td>
-          <%= c.name %>
+          <%= #c.name  %>
         </td>
         <td>
-          <%=c.orders.first.id%>
+          <%= #c.orders.first.id %>
         </td>
       </tr>
-  <% end %>
+  <% #end  %>
 </table>
+-->
