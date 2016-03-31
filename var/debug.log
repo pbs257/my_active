@@ -902,3 +902,124 @@ D, [2016-03-31T03:32:13.770564 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[
 D, [2016-03-31T03:32:13.771429 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
 D, [2016-03-31T03:32:13.772260 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
 D, [2016-03-31T03:32:13.773209 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.683148 #5013] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:40:10.686963 #5013] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.688417 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:40:10.689141 #5013] DEBUG -- :   [1m[36mOrder Load (0.0ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.690743 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:40:10.691772 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.692839 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:40:10.693841 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.694883 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:40:10.695860 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:40:10.696806 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.214453 #5013] DEBUG -- :   [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:42:43.220690 #5013] DEBUG -- :   [1m[35mOrder Load (0.0ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.222223 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:42:43.223192 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.224130 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:42:43.227433 #5013] DEBUG -- :   [1m[35mOrder Load (1.9ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.228294 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:42:43.229178 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.230003 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:42:43.230825 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:42:43.231623 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.269597 #5013] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:47:08.273122 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.274135 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:47:08.275131 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.276009 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:47:08.276896 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.277705 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:47:08.278568 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.279436 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:47:08.280265 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:47:08.281178 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.023231 #5013] DEBUG -- :   [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:48:01.027457 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.028806 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:48:01.030010 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.030988 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:48:01.032058 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.033045 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:48:01.033962 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.035061 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:48:01.036042 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:48:01.036965 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.622006 #5013] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:49:11.623873 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.625230 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.626169 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.627151 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.628063 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.628955 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.629816 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.630676 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.631563 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.632409 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.633080 #5013] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:49:11.634275 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.635154 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.635991 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.636796 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.637621 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.638338 #5013] DEBUG -- :   [1m[36mOrder Load (0.0ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.639391 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.640186 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:49:11.641063 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:49:11.642009 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.597515 #5013] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:50:59.602367 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.603653 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:50:59.604744 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.605735 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:50:59.606721 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.607747 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:50:59.608701 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.609241 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:50:59.610212 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:50:59.611153 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.759102 #5013] DEBUG -- :   [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:51:52.761503 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.762854 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:51:52.764011 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.765287 #5013] DEBUG -- :   [1m[36mOrder Load (0.0ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:51:52.766233 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.767169 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:51:52.768772 #5013] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.769647 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:51:52.770523 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:51:52.771355 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.444178 #5013] DEBUG -- :   [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:52:37.445943 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.447436 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:52:37.448337 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.449229 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:52:37.450086 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.451013 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:52:37.452019 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.452873 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:52:37.453704 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:52:37.454677 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.145325 #5013] DEBUG -- :   [1m[36mCustomer Load (0.5ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+D, [2016-03-31T03:54:29.149363 #5013] DEBUG -- :   [1m[35mOrder Load (0.4ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.150747 #5013] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:54:29.151939 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.153109 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:54:29.154144 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.155170 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:54:29.156172 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.157156 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:54:29.158217 #5013] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:54:29.159194 #5013] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.643317 #5013] DEBUG -- :   [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers`
+D, [2016-03-31T03:55:42.644880 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 1  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.645742 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 2  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:55:42.647030 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.647864 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 4  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:55:42.648703 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 5  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.649848 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 6  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:55:42.650906 #5013] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 7  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.651810 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 8  ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2016-03-31T03:55:42.652681 #5013] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 9  ORDER BY `orders`.`id` ASC LIMIT 1[0m
+D, [2016-03-31T03:55:42.653763 #5013] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 10  ORDER BY `orders`.`id` ASC LIMIT 1
