@@ -50,3 +50,7 @@ end
 get '/shop/bootstrap_tester' do
   erb :bootstrap_tester
 end
+
+get '/shop/index'do
+  erb :index
+end

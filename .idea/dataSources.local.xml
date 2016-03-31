@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - development_pims@192.168.33.10" uuid="58090a4a-0fa3-4ab0-b642-274d3888a4d8">
+      <secret-storage>memory</secret-storage>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="MySQL - test_pims@192.168.33.10" uuid="7af66e3f-d118-43cd-a582-b66c39a7ccd3">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>test_pims.*</schema-pattern>
+      <default-schemas>test_pims.*</default-schemas>
+    </data-source>
+  </component>
+</project>
