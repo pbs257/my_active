@@ -4,8 +4,10 @@
 <h2>ID <%=product_hash.id %></h2> 
 <h2>SKU <%=product_hash.sku %></h2> 
 <h2>Price <%=product_hash.price %></h2> 
+<form id="Product Delete" method="post" action="/shop/product/delete">
+  <input type="text" id="id" name="id" value="<%= @id%>" hidden="true">
+  <input type="submit" title="Delete">
+</form>
 
 
-
-<
 

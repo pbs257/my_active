@@ -1,38 +1,45 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"> <!--Tells browser to use latest rendering engine -->
-  <title></title>
-  <meta name="viewport" content="width = device-width, initial-scale = 1 "> <!--Set page width to size of device and set zoom level 1-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<body>
-<div class="container"> <!--Puts padding around everything within div-->
+
   <div class="jumbotron">
     <h1>Customers</h1>
   </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-      <h3>ID</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <h3>ID</h3>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <h3>Name</h3>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <h3>Order ID</h3>
+      </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-      <h3>Name</h3>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-      <h3>Order ID</h3>
-    </div>
-  </div>
   <% Customer.all.each do |c| %>
   <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <table class="table table-bordered table-striped table-hover">
+          <td class="text-center"><%=c.id%></td>
+        </table>
+        <table class="table table-bordered table-striped table-hover">
+        <td class="text-center"><%=c.name%></td>
+        </table>
+        <table class="table table-bordered table-striped table-hover">
+        <td class="text-center"><%=c.orders.first.id%></td>
+        </table>
 
+      </div>
   </div>
-</div>
+  <%end%>
 
   <!--Button Tutorial -->
   <div class="jumbotron"> <!--Enlarges fonts and puts everything in a grey box -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus malesuada nunc, nec vestibulum elit tristique sit amet. Phasellus varius suscipit ipsum nec pretium. Donec laoreet velit elit. Nulla luctus, sem ac gravida placerat, sapien ex hendrerit erat, a tincidunt sem ipsum quis sem. Maecenas quis pharetra massa. Aliquam erat volutpat. Duis pharetra iaculis imperdiet. Integer eget felis ut sapien facilisis rutrum egestas eget purus. Nam facilisis nec diam non bibendum. Nunc sed mattis odio. Curabitur consectetur, orci in facilisis ullamcorper, ipsum ex scelerisque tellus, ac pellentesque ligula ante sed tortor.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus malesuada nunc, nec vestibulum elit
+      tristique sit amet. Phasellus varius suscipit ipsum nec pretium. Donec laoreet velit elit. Nulla luctus, sem ac
+      gravida placerat, sapien ex hendrerit erat, a tincidunt sem ipsum quis sem. Maecenas quis pharetra massa. Aliquam
+      erat volutpat. Duis pharetra iaculis imperdiet. Integer eget felis ut sapien facilisis rutrum egestas eget purus.
+      Nam facilisis nec diam non bibendum. Nunc sed mattis odio. Curabitur consectetur, orci in facilisis ullamcorper,
+      ipsum ex scelerisque tellus, ac pellentesque ligula ante sed tortor.</p>
     <a href="http://wired.com" class="btn btn-default btn-lg" role="button">Procrastinate</a>
     <button type="submit" class="btn btn-danger" role="button">Button</button>
     <input type="button" value="Info" class="btn btn-info btn-lg">
@@ -89,7 +96,7 @@
           <%= c.name %>
         </td>
         <td>
-          <%=c.orders.first.id%>
+          <%= c.orders.first.id %>
         </td>
       </tr>
   <% end %>

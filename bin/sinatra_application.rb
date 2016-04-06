@@ -10,30 +10,36 @@ get '/shop/test' do
   p User.all
 end
 
-get '/shop/test2' do
-  "<h1 style='color: blue'>Hello world</h1>
-  <body>This is the body of the test.
-  <ul><b>Unstructured list</b> time!</ul></body>"
-end
-
 get '/shop/customers' do
-  erb :customers
-end
-
-get '/shop/products' do
   erb :home, :layout => false do
-    erb :products
+    erb :customers
   end
 end
 
+
 get '/shop/orders' do
-  erb :orders
+  erb :home, :layout => false do
+    erb :orders
+  end
 end
 
 get '/shop/product' do
   erb :home, :layout => false do
     erb :products
   end
+end
+
+get '/shop/product/new' do
+  erb :home, :layout => false do
+    erb :product_new
+  end
+end
+
+
+post '/shop/product/delete' do
+  p = Product.find params[:id]
+  p.delete
+
 end
 
 get '/shop/product/:id' do
@@ -53,4 +59,18 @@ end
 
 get '/shop/index'do
   erb :index
+end
+
+
+
+post '/shop/product' do
+  new_product = Product.new
+  new_product.name = params[:name]
+  new_product.price =params[:price]
+  new_product.sku = params[:sku]
+  new_product.save
+end
+
+put '/shop/product/:id' do
+  #db.update product params[:description]
 end
