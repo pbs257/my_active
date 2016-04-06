@@ -6,11 +6,7 @@ set :bind, '0.0.0.0'
 set :views, settings.root + '/../views'
 
 
-get '/shop/test' do
-  p User.all
-end
-
-get '/shop/customers' do
+get '/shop/customer' do
   erb :home, :layout => false do
     erb :customers
   end
@@ -39,7 +35,7 @@ end
 post '/shop/product/delete' do
   p = Product.find params[:id]
   p.delete
-
+  erb :product_delete
 end
 
 get '/shop/product/:id' do
@@ -49,13 +45,7 @@ get '/shop/product/:id' do
     end
 end
 
-get '/shop/product/1' do
-  erb :product
-end
 
-get '/shop/bootstrap_tester' do
-  erb :bootstrap_tester
-end
 
 get '/shop/index'do
   erb :index
