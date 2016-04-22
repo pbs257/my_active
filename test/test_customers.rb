@@ -6,11 +6,19 @@ class TestCustomers < MiniTest::Unit::TestCase
   def test_write
     assert_equal 0, Customer.count
 
+    first_name = ["Peter", "Kirill", "Amber", "Adam", "David", "Michael", "Gabriella", "Alexandra", "Amanda", "Walter"]
+    middle_name = ["A.", "B.", "C.", "D.", "E.", "F.", "G.", "H.", "I.", "J."]
+    last_name = ["Sandler", "Shakirov", "White", "Henderson", "Chu", "Wilcox", "Smith", "Finklestein", "Lenon", "Orwell"]
+
     for i in 1..10 do
       customers = Customer.new
-      customers.name = "Customer #{i}"
+      customers.name = first_name[i]
+      for i in 1..10 do
+        customers.name += middle_name[i]
+      end
       customers.save
     end
+    puts customers 
     assert 10, Customer.count
 =begin
     customers = Customer.all

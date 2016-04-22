@@ -1,0 +1,16 @@
+h1 {
+    color: darkmagenta;
+    font-size: 30px;
+    font-family: "American Typewriter";
+}
+
+p{
+    color: darkolivegreen;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+ul{
+    color: tomato;
+    font-family: "Comic Sans MS"
+}
