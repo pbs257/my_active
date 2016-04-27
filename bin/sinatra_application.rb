@@ -3,7 +3,9 @@ require 'json'
 require_relative '../lib/app_helper'
 require_relative '../lib/app_lib'
 set :bind, '0.0.0.0'
+set :root, File.dirname(__FILE__)
 set :views, settings.root + '/../views'
+set :public_folder, settings.root + '/../public'
 
 
 get '/shop/customer' do
@@ -35,7 +37,8 @@ end
 post '/shop/product/delete' do
   p = Product.find params[:id]
   p.delete
-  erb :product_delete
+  #erb :product_delete
+  redirect '/shop/product'
 end
 
 get '/shop/product/:id' do
@@ -45,13 +48,9 @@ get '/shop/product/:id' do
     end
 end
 
-
-
 get '/shop/index'do
   erb :index
 end
-
-
 
 post '/shop/product' do
   new_product = Product.new
@@ -61,6 +60,14 @@ post '/shop/product' do
   new_product.save
 end
 
+get '/shop/test_view' do
+  erb :test_view
+end
+
 put '/shop/product/:id' do
   #db.update product params[:description]
+end
+
+get '/shop/customer/color/' do
+  "blue"
 end

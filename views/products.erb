@@ -1,41 +1,45 @@
-<h1>Products</h1>
+<div class="jumbotron">
+  <h1>Products</h1>
+</div>
 
-<table>
-  <tr>
-    <td>
-      <b>
-        ID
-      </b>
-    </td>
-    <td>
-      <b>
-        Name
-      </b>
-    </td>
-    <td>
-      <b>
-        Price
-      </b>
-    </td>
-    <td>
-      <b>
-        Description
-      </b>
-    </td>
-  </tr>
-  <% Product.all.each do |c| %>
+<div class="container">
+  <div class="row">
+    <table class="table table-bordered table striped table-hover">
+      <thead>
       <tr>
-        <td>
-          <%=c.id%>
-        </td>
-        <td>
-          <a href="product/<%=c.id%>"><%=c.name%></a>
-        </td>
-        <td>
-          <%=c.price%>
-        </td>
-
+        <th>
+          Name
+        </th>
+        <th>
+          ID
+        </th>
+        <th>
+          SKU
+        </th>
+        <th>
+          Price
+        </th>
       </tr>
-  <%end%>
-</table>
-<button type="button" onclick="location='/shop/product/new'" class="btn btn-default">Create</button>
+      </thead>
+      <tbody>
+      <% Product.all.each do |p| %>
+          <tr>
+            <td>
+              <%= p.id %>
+            </td>
+            <td>
+              <a href="product/<%= p.id %>"><%= p.name %></a>
+            </td>
+            <td>
+              <%= p.sku %>
+            </td>
+            <td>
+              <%= p.price %>
+            </td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <button type="button" onclick="location='/shop/product/new'" class="btn btn-default">Create</button>
+  </div>
+</div>
