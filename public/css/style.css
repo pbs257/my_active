@@ -1,16 +1,48 @@
 h1 {
-    color: darkmagenta;
+    color: mediumspringgreen;
     font-size: 30px;
-    font-family: "American Typewriter";
+    background-image: url("/public/images/northern lights.jpg");
+    font-weight: bolder;
 }
 
 p{
-    color: darkolivegreen;
+    color: darkgrey;
     font-size: 12px;
     font-family: Verdana;
 }
 
 ul{
-    color: tomato;
-    font-family: "Comic Sans MS"
+    color: forestgreen;
+    font-family: "Adobe Hebrew"
+}
+
+ol{
+    color: yellowgreen;
+    font-family: SansSerif;
+    list-style: upper-roman;
+    font-weight: bold;
+}
+
+ol ol{
+    list-style: lower-roman;
+    color: limegreen;
+}
+
+ol ol ol{
+    list-style: lower-alpha;
+    color: mediumseagreen;
+}
+
+ol ol ol ol{
+    list-style: decimal;
+    color: lightseagreen;
+}
+
+body{
+    background-image: url("/public/images/northern lights.jpg");
+    background-color: black;
+}
+
+a{
+    color: yellow;
 }

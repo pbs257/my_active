@@ -71,3 +71,7 @@ end
 get '/shop/customer/color/' do
   "blue"
 end
+
+get '/shop/table_of_contents' do
+  erb :table_of_contents
+end
