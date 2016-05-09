@@ -12,7 +12,7 @@ class TestCustomers < MiniTest::Unit::TestCase
     last_name = ["Sandler", "Shakirov", "White", "Henderson", "Chu", "Wilcox", "Smith", "Finklestein", "Lenon", "Orwell"]
 
 
-    1000.times do |i|
+    555.times do |i|
       puts "Customer #{i} is going to be added to the database"
       customers = Customer.new
       customers.name = "Customer #{i}"

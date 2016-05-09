@@ -6,29 +6,15 @@ class TestProducts < MiniTest::Unit::TestCase
   def test_write
     assert_equal 0, Product.count
 
-    for i in 1..1000 do
+      555.times do |p|
+      puts "Adding product #{p} to the database."
       new_product = Product.new
-      new_product.name = "Product_" + i.to_s
-      new_product.price = "#{i}"
-      new_product.sku = i
+      new_product.name = "Product_#{p}"
+      new_product.price = "$#{p}"
+      new_product.sku = p
       new_product.save
     end
-    assert 1000, Product.count
-=begin
-    products = Product.all
-    previous_price = 0
-    products.each do |p|
-      if p.price == previous_price
-        puts "error"
-      end
-      previous_price = p.price
-    end
-
-
-    assert_equal 0, Product.count
-
-=end
+    assert 555, Product.count
   end
 end
-
 
