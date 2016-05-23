@@ -11,6 +11,7 @@ set :public_folder, settings.root + '/../public'
 get '/shop/customer' do
   @my_active_product = ""
   @my_active_customer = "active"
+  @customers = Customer.all
   erb :home, :layout => false do
     erb :customers
   end
@@ -20,6 +21,7 @@ end
 get '/shop/orders' do
   @my_active_product = ""
   @my_active_order = "active"
+  @orders = Order.all
   erb :home, :layout => false do
     erb :orders
   end
@@ -41,7 +43,7 @@ get '/shop/product' do
   elsif not @previous == 0
     @next = @previous + 1
     @previous = @previous - 1
-    @products = Product.offset(0).take(10)
+    @products = Product.offset(@previous).take(10)
 
   end
 

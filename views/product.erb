@@ -1,6 +1,6 @@
 
 <h1>Product <%= @id %></h1>
-<% product_hash = Product.find(@id) %>
+<% product_hash = @product %>
 <h2>Name: <%= product_hash.name %> </h2>
 <h2>ID: <%=product_hash.id %></h2> 
 <h2>SKU: <%=product_hash.sku %></h2> 
