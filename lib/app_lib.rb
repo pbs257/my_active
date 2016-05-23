@@ -3,6 +3,8 @@ end
 
 class Customer < ActiveRecord::Base
   has_many :orders, dependent: :destroy
+
+
 end
 
 class Product < ActiveRecord::Base

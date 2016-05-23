@@ -29,16 +29,7 @@
                 <%= c.name %>
               </td>
               <td >
-                <% orders_str = "FFF" %>
-                <% c.orders.each do |o| %>
-                    <% if orders_str=="FFF" %>
-
-                        <% orders_str = o.id.to_s + " FF " %>
-                    <% else %>
-                        <% orders_str = orders_str + ", " + o.id.to_s %>
-                    <% end %>
-                    <%= orders_str %>
-                <% end %>
+                <%= c.orders %>
               </td>
             </tr>
         <% end %>

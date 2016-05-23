@@ -22,7 +22,7 @@
       </tr>
       </thead>
       <tbody>
-      <% Product.all.each do |p| %>
+      <% @products.each do |p| %>
           <tr>
             <td>
               <%= p.id %>
@@ -40,6 +40,8 @@
       <% end %>
       </tbody>
     </table>
+    <button class="btn btn-default" onclick="location='/shop/product?nextpage=<%= @next%>'" >Next</button>
+    <button class="btn btn-default" onclick="location='/shop/product?previouspage=<%= @previous %>'">Previous</button>
     <button type="button" onclick="location='/shop/product/new'" class="btn btn-default">Create</button>
   </div>
 </div>

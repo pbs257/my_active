@@ -7,7 +7,7 @@
 <h2 onmouseover="console.log('focused')">Price: <%=product_hash.price %></h2> 
 <form id="Product Delete" method="post" action="/shop/product/delete">
   <input type="text" id="id" name="id" value="<%= @id%>" hidden="true">
-  <input type="submit" title="Delete" onclick="alert('Attention, you are about to delete this producct')" value="Delete" class="btn-danger btn-sm">
+  <input type="submit" title="Delete" onclick="alert('Attention, you are about to delete this product')" value="Delete" class="btn-danger btn-sm">
   <button class="btn-default btn-sm" onclick="alert('Hi')">Back</button>
 </form>
 
