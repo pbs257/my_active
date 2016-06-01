@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'json'
+require 'puma'
 require_relative '../lib/app_helper'
 require_relative '../lib/app_lib'
 set :bind, '0.0.0.0'
@@ -30,17 +31,20 @@ end
 get '/shop/product' do
   @next = params[:nextpage].to_i
   @previous = params[:prevouspage].to_i
+  puts @previous.to_s + " p"
   @my_active_product = "active"
   @my_active_order = ""
   if @next == 0 and @previous == 0
     @products = Product.take 10
     @next = 2
     @previous = 0
-  elsif not @next == 0
+  elsif not @next == 0 and not @next.nil?
+    puts @next.to_s + " n"
     @next = @next + 1
     @previous = @next - 1
     @products = Product.offset((@previous) * 10).take(10)
   elsif not @previous == 0
+    puts @previous.to_s + " p"
     @next = @previous + 1
     @previous = @previous - 1
     @products = Product.offset(@previous).take(10)
