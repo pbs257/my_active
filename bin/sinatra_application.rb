@@ -30,7 +30,7 @@ end
 
 get '/shop/product' do
   @next = params[:nextpage].to_i
-  @previous = params[:prevouspage].to_i
+  @previous = params[:previouspage].to_i
   puts @previous.to_s + " p"
   @my_active_product = "active"
   @my_active_order = ""
@@ -47,7 +47,7 @@ get '/shop/product' do
     puts @previous.to_s + " p"
     @next = @previous + 1
     @previous = @previous - 1
-    @products = Product.offset(@previous).take(10)
+    @products = Product.offset(@previous * 10).take(10)
 
   end
 
