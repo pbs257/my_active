@@ -40,8 +40,9 @@
       <% end %>
       </tbody>
     </table>
-    <button class="btn btn-default" onclick="location='/shop/product?nextpage=<%= @next%>'" >Next</button>
-    <button class="btn btn-default" onclick="location='/shop/product?previouspage=<%= @previous %>'">Previous</button>
+    <div>
     <button type="button" onclick="location='/shop/product/new'" class="btn btn-default">Create</button>
+      </div>
+    <%= will_paginate @products %>
   </div>
 </div>
